@@ -3,7 +3,7 @@ from random import choice
 from pyrogram import filters, enums
 from pyrogram.errors import UserNotParticipant
 from . import Bots, Configs
-from .pavan import Midukki_RoboT
+from .Midukki import Midukki_RoboT
 from .scripts import START_TXT, HELP_TXT, ABOUT_TXT, STATUS_TXT, DONATE_TXT
 from Midukki.modules import vars
 from Midukki.functions.user_details import user_mention
