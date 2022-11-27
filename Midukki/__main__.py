@@ -63,9 +63,9 @@ async def start_command(client: Midukki_RoboT, message: message()):
                             )
                     ]
                 ]    
-                roiderff = markup()
+                pr0fess0r_99 = markup()
                 (
-                    roiderff
+                    pr0fess0r_99
                 )
                 await message.reply_photo(photo=choice(FORCES), caption=f"""<i><b>𝙷𝙴𝙻𝙻𝙾 {message.from_user.mention}. \n 𝚈𝙾𝚄 𝙷𝙰𝚅𝙴 <a href="{invite_link.invite_link}"> 𝙽𝙾𝚃 𝚂𝚄𝙱𝚂𝙲𝚁𝙸𝙱𝙴𝙳</a> 𝚃𝙾 <a href="{invite_link.invite_link}">𝙼𝚈 𝚄𝙿𝙳𝙰𝚃𝙴 𝙲𝙷𝙰𝙽𝙽𝙴𝙻</a>.𝚂𝙾 𝚈𝙾𝚄 𝙳𝙾 𝙽𝙾𝚃 𝙶𝙴𝚃 𝚃𝙷𝙴 𝙵𝙸𝙻𝙴𝚂 𝙾𝙽 𝙱𝙾𝚃 𝙿𝙼 𝙾𝚁 𝙶𝚁𝙾𝚄𝙿 (𝙵𝙸𝙻𝚃𝙴𝚁)</i></b>""", reply_markup=roiderff)                
                 return
