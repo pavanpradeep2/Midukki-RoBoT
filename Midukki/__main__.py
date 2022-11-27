@@ -3,7 +3,7 @@ from random import choice
 from pyrogram import filters, enums
 from pyrogram.errors import UserNotParticipant
 from . import Bots, Configs
-from .midukki import Midukki_RoboT
+from .pavan import pavan_RoboT
 from .scripts import START_TXT, HELP_TXT, ABOUT_TXT, STATUS_TXT, DONATE_TXT
 from Midukki.modules import vars
 from Midukki.functions.user_details import user_mention
@@ -14,7 +14,7 @@ from Midukki.database import get_file_details
 from Midukki.functions.settings import get_settings
 from Midukki.database import db
 
-@Midukki_RoboT.on_message(Command.a)
+@roiderff.on_message(Command.a)
 async def start_command(client: Midukki_RoboT, message: message()):
     if not await db.is_user_exist(message.from_user.id):
         await db.add_user(message.from_user.id, message.from_user.first_name)
@@ -42,7 +42,7 @@ async def start_command(client: Midukki_RoboT, message: message()):
                 await message.reply(e)
         return
 
-    if message.text.startswith("/start muhammedrk"):
+    if message.text.startswith("/start pavan"):
         if Configs.AUTH_CHANNEL != 1:
             invite_link = await client.create_chat_invite_link(int(Configs.AUTH_CHANNEL))
             try:
@@ -52,7 +52,7 @@ async def start_command(client: Midukki_RoboT, message: message()):
                     return
             except UserNotParticipant:
                 mrk, file_id, grp_id = message.text.split("_-_-_")
-                FORCES = ["https://telegra.ph/file/b2acb2586995d0e107760.jpg"]
+                FORCES = ["https://telegra.ph/HHii-11-21"]
                 invite_link = await client.create_chat_invite_link(int(Configs.AUTH_CHANNEL))
                 pr0fess0r_99 = [
                     [
@@ -63,11 +63,11 @@ async def start_command(client: Midukki_RoboT, message: message()):
                             )
                     ]
                 ]    
-                pr0fess0r_99 = markup()
+                roiderff = markup()
                 (
-                    pr0fess0r_99
+                    roiderff
                 )
-                await message.reply_photo(photo=choice(FORCES), caption=f"""<i><b>𝙷𝙴𝙻𝙻𝙾 {message.from_user.mention}. \n 𝚈𝙾𝚄 𝙷𝙰𝚅𝙴 <a href="{invite_link.invite_link}"> 𝙽𝙾𝚃 𝚂𝚄𝙱𝚂𝙲𝚁𝙸𝙱𝙴𝙳</a> 𝚃𝙾 <a href="{invite_link.invite_link}">𝙼𝚈 𝚄𝙿𝙳𝙰𝚃𝙴 𝙲𝙷𝙰𝙽𝙽𝙴𝙻</a>.𝚂𝙾 𝚈𝙾𝚄 𝙳𝙾 𝙽𝙾𝚃 𝙶𝙴𝚃 𝚃𝙷𝙴 𝙵𝙸𝙻𝙴𝚂 𝙾𝙽 𝙱𝙾𝚃 𝙿𝙼 𝙾𝚁 𝙶𝚁𝙾𝚄𝙿 (𝙵𝙸𝙻𝚃𝙴𝚁)</i></b>""", reply_markup=pr0fess0r_99)                
+                await message.reply_photo(photo=choice(FORCES), caption=f"""<i><b>𝙷𝙴𝙻𝙻𝙾 {message.from_user.mention}. \n 𝚈𝙾𝚄 𝙷𝙰𝚅𝙴 <a href="{invite_link.invite_link}"> 𝙽𝙾𝚃 𝚂𝚄𝙱𝚂𝙲𝚁𝙸𝙱𝙴𝙳</a> 𝚃𝙾 <a href="{invite_link.invite_link}">𝙼𝚈 𝚄𝙿𝙳𝙰𝚃𝙴 𝙲𝙷𝙰𝙽𝙽𝙴𝙻</a>.𝚂𝙾 𝚈𝙾𝚄 𝙳𝙾 𝙽𝙾𝚃 𝙶𝙴𝚃 𝚃𝙷𝙴 𝙵𝙸𝙻𝙴𝚂 𝙾𝙽 𝙱𝙾𝚃 𝙿𝙼 𝙾𝚁 𝙶𝚁𝙾𝚄𝙿 (𝙵𝙸𝙻𝚃𝙴𝚁)</i></b>""", reply_markup=roiderff)                
                 return
         try:
             mrk, file_id, grp_id = message.text.split("_-_-_")
