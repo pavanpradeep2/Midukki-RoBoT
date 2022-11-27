@@ -19,8 +19,8 @@ class Accounts(object):
     API_ID = int(environ.get("API_ID", 0))
     API_HASH = environ.get("API_HASH")
     BOT_TOKEN = environ.get("BOT_TOKEN")
-    BOT_PLUGINS = environ.get("BOT_PLUGINS", "Midukki")
-    BOT_SESSIONS = environ.get("BOT_SESSION", "Midukki-RoboT")
+    BOT_PLUGINS = environ.get("BOT_PLUGINS", "pavan")
+    BOT_SESSIONS = environ.get("BOT_SESSION", "pavan-RoboT")
 
 class Bots(object):
     BOT_ID = int(environ.get("BOT_ID", Accounts.BOT_TOKEN.split(":")[0]))
@@ -39,12 +39,12 @@ class Customize(object):
 
 class Configs(object):
     # admins id
-    ADMINS_ID = [int(admin) if find.search(admin) else admin for admin in environ.get('ADMINS_ID', '5601313788').split()]
+    ADMINS_ID = [int(admin) if find.search(admin) else admin for admin in environ.get('ADMINS_ID', '1135883374').split()]
 
     # bot information   
     COMMAND_PREFIXES = environ.get("COMMAND_PREFIXES", "/")
     if environ.get("BOT_PICS"):
-        START_PICS = (environ.get("BOT_PICS", "https://telegra.ph/file/5ad2c57ae74bafb6efec1.jpg")).split()
+        START_PICS = (environ.get("BOT_PICS", "https://telegra.ph/HHii-11-21")).split()
     START_MESSAGE = environ.get("START_MESSAGE", START_TXT)
 
     # MongoDB information
@@ -71,7 +71,7 @@ class Configs(object):
     WEB_API = environ.get("ADS_WEB_API")
 
     # other
-    DONATE_LINKS = environ.get("DONATE_LINK", "https://p.paytm.me/xCTH/7yzmtgie")
+    DONATE_LINKS = environ.get("DONATE_LINK", "")
     LOADING_SYMBOL = environ.get("LOADING_MODE", "ON")
     LOADING_A = environ.get("LOADING_SYMBOL_A", "⚪️")
     LOADING_B = environ.get("LOADING_SYMBOL_B", "⚫️")
