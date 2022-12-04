@@ -118,7 +118,6 @@ Read this before you start messing up with your edits
 
 How To Deploy 👉
 <a href="https://youtu.be/63K9xkKMBoo"><img alt="YouTube" src="https://img.shields.io/badge/Video-%22B1B17.svg?&logo=youtube&logoColor=white"></a>
-
 <details><summary>Deploy To Heroku</summary>
 <p>
 <br>
@@ -127,7 +126,7 @@ How To Deploy 👉
 </a>
 </p>
 </details>
-
+[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=github.com/pavanpradeep2/Midukki-RoBoTbot&branch=koyeb&name=roiderff)
 <details><summary>Deploy To Railway</summary>
 <p>
 <br>
